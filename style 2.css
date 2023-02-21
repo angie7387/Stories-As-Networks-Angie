@@ -1,0 +1,302 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+/* Basic page style resets */
+* {
+    box-sizing: border-box;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  
+  body {
+    margin: 50px;
+    background-color: #F2F2F2;
+    color: #575757;
+  }
+  /* Import fonts */
+  @font-face {
+   font-family: 'OffBitTrial';
+     src: url('OffBitTrial-Bold.otf');
+  }
+  
+  .text {
+    font-family: 'OffBitTrial';
+    font-size: 200px;
+    line-height: 150px;
+     src: url('OffBitTrial-Bold.otf');
+  }
+  
+  h1 {
+    font-family: 'OffBitTrial';
+     src: url(OffBitTrial-Bold.otf);
+  }
+
+  .text2 {
+    font-family: 'OffBitTrial';
+    font-size: 50px;
+    line-height: 40px;
+     src: url(OffBitTrial-Bold.otf);
+  }
+  
+  .rotate2{
+    width:300px;
+  }
+  
+  .rotate {
+    width: 300px;
+    animation: rotation1 1.5s;
+  
+  }
+  
+  @keyframes rotation1 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate2 {
+    width: 300px;
+    animation: rotation2 1.5s;
+    animation-delay: 1s;
+  
+  }
+  
+  @keyframes rotation2 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(5deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate3 {
+    width: 300px;
+    animation: rotation3 1.5s;
+    animation-delay: 2s;
+    FONT-size: 100px;
+  
+  }
+  
+  @keyframes rotation3 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(0deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate4 {
+    width: 300px;
+    animation: rotation4 1.5s;
+    animation-delay: 3s;
+    FONT-size: 100px;
+  
+  }
+  
+  @keyframes rotation4 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(0deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate5 {
+    width: 300px;
+    animation: rotation5 1.5s;
+    animation-delay: 3s;
+  
+  }
+  
+  @keyframes rotation5 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate6 {
+    width: 300px;
+    animation: rotation5 1.5s;
+    animation-delay: 3s;
+  
+  }
+  
+  @keyframes rotation6 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .column-content {
+    flex: 1;
+    width:50%;
+    float: left;
+  }
+  
+  .column-content2 {
+    flex: 1;
+    width:50%;
+    float: right;
+  }
+  
+  .opacity {
+    animation: opacity2 4s linear;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  
+  
+  }
+  
+  @keyframes opacity2 { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .down-arrow {
+    position: absolute;
+    top: calc(50vh - 80px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 35px;
+    border: 3px solid;
+    border-radius: px;
+    animation: jumpInfinite 3s infinite;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+  
+  img {
+    width: 100%;
+    padding-top: 150px;
+    rotate: 10deg;
+  }
+  
+  img:hover {
+    animation: rotationimg 1s;
+  }
+  
+  @keyframes rotationimg {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1) rotate(-5deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .scroll {
+    animation: jumpInfinite 3s infinite;
+    position: absolute;
+    top: 230px;
+    left: 700px;
+  }
+  
+  .right-arrow {
+    position: absolute;
+    top: calc(50vh - 80px);
+    left: calc(50% - 14px);
+    width: 0;
+    rotate: 270deg;
+    height: 35px;
+    border: 3px solid;
+    border-radius: px;
+    animation/ jumpInfinite2 1s infinite;
+  }
+  
+  .right-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 5px solid;
+    border-right: 5px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  }
+  
+  @keyframes jumpInfinite2 {
+    0% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 20px;
+    }
+    100% {
+      margin-left: 0;
+    }
+  }
+  
+  .shift {
+    position: absolute;
+    top: 600px;
+    left: 830px;
+  }
+  
+  .scrollright {
+     animation: jumpInfinite3 .5s infinite;
+    position: absolute;
+    top: 875px;
+    left: 930px;
+  }
+  
+  @keyframes jumpInfinite3 {
+    0% {
+      margin-left: 0;
+      rotate: -5deg;
+    }
+    50% {
+      margin-left: 20px;
+      rotate: 5deg;
+    }
+    100% {
+      margin-left: 0;
+      rotate: -5deg;
+    }
+  }
+  
+  .text2 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size:20px;
+  }
+  
+  .text3{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size:36px;
+  }

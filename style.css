@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'OffBitTrial';
+    src: url(OffBitTrial-Bold.otf);
+   }
+
+.container {
+  display: flex;
+  padding-left:50px;
+}
+
+.text {
+    font-family: 'OffBitTrial';
+  font-size: 100px;
+  line-height: 5px;;
+   src: url(OffBitTrial-Bold.otf);
+   color: #575757;
+
+}
+
+.text2 {
+    font-family: 'OffBitTrial';
+    font-size: 20px;
+    line-height: 40px;;
+   src: url(OffBitTrial-Bold.otf);
+   color: #575757;
+   position: absolute;
+   top: 30px;
+
+}
+
+.text3 {
+    position: absolute;
+    top: 500px;
+    font-family: 'OffBitTrial';
+    font-size: 20px;
+    src: url(OffBitTrial-Bold.otf);
+    color: #575757;
+  }
+
+   .opacity {
+  animation: opacity2 4s linear;
+  animation-delay: 4s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+
+}
+
+@keyframes opacity2 { 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+  .opacity {
+    animation: opacity2 4s linear;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  
+  
+  }
+
+  .opacity2 {
+    animation: opacity2 4s linear;
+    animation-delay: 6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  
+  
+  }
+  
+  @keyframes opacity2 { 
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+.column1 {
+    width: 90%;
+    flex: auto;
+}
+
+.column2 {
+    width: 50%;
+    flex: auto; 
+}
+
+.rotate {
+    width: 300px;
+    animation: rotation1 1.5s;
+  }
+
+  @keyframes rotation1 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+
+  .rotate2{
+    width:300px;
+  }
+  
+  .rotate {
+    width: 300px;
+    animation: rotation1 1.5s;
+  
+  }
+  
+  @keyframes rotation1 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate2 {
+    width: 300px;
+    animation: rotation2 1.5s;
+    animation-delay: 1s;
+  
+  }
+  
+  @keyframes rotation2 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(5deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate3 {
+    width: 300px;
+    animation: rotation3 1.5s;
+    animation-delay: 2s;
+    FONT-size: 100px;
+  
+  }
+  
+  @keyframes rotation3 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(0deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate4 {
+    width: 300px;
+    animation: rotation4 1.5s;
+    animation-delay: 3s;
+    FONT-size: 100px;
+  
+  }
+  
+  @keyframes rotation4 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(0deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate5 {
+    width: 300px;
+    animation: rotation5 1.5s;
+    animation-delay: 3s;
+  
+  }
+  
+  @keyframes rotation5 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+  
+  .rotate6 {
+    width: 300px;
+    animation: rotation5 1.5s;
+    animation-delay: 3s;
+  
+  }
+  
+  @keyframes rotation6 {
+   0%   {transform: scale(1) rotate(0deg);}
+    50%  {transform: scale(1.1) rotate(-10deg);}
+    100% {transform: scale(1) rotate(0deg);}
+  }
+
+  img {
+    width: 170%
+  }
+
+  .imgcontainer {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 100px;
+  }
+
+  .imgcontainer:hover {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    rotate: 10deg;
+    animation: jumpInfinite3 .5s infinite;
+  }
+
+  @keyframes jumpInfinite3 {
+    0% {
+      margin-left: 0;
+      rotate: -5deg;
+    }
+    50% {
+      margin-left: 0px;
+      rotate: 5deg;
+    }
+    100% {
+      margin-left: 0;
+      rotate: -5deg;
+    }
+  }
+  
+
+  .eye1 {
+    height: 60px;
+    width: 30px;
+    background-color: #FFFFFF;
+    border: #575757 2px solid;
+    border-radius: 50%;
+    top: 0px;
+    left: 250px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .pupil1 {
+    height: 30px;
+    width: 20px;
+    background-color: #575757;
+    border: #575757 2px solid;
+    border-radius: 50%;
+    top: 0px;
+    left: 2px;
+    position: absolute;
+    z-index: 1;
+    animation: eye1 1s infinite;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes eye1 {
+    0%  {transform: translateX(5px) translateY(5px);}
+    25% {transform: translateX(2px) translateY(-3px);}
+    60% {transform: translateX(-3px) translateY(15px);}
+    90% {transform: translateX(5px) translateY(6px);}
+    100%  {transform: translateX(5px) translateY(5px);}
+   }
+   
+
+  .eye2 {
+    height: 60px;
+    width: 30px;
+    background-color: #FFFFFF;
+    border: #575757 2px solid;
+    border-radius: 50%;
+    top: 0px;
+    left: 220px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .pupil2 {
+    height: 30px;
+    width: 20px;
+    background-color: #575757;
+    border: #575757 2px solid;
+    border-radius: 50%;
+    top: 0px;
+    left: 2px;
+    position: absolute;
+    z-index: 1;
+    animation: eye1 1s infinite;
+    animation-fill-mode: forwards;
+  }
+
+  .hand {
+    width: 40px;
+    padding-top: 300px;
+    left: 300px;
+    animation: jumpInfinite3 1s infinite;
+
+  }
+   
